@@ -1,11 +1,32 @@
 <template>
-  <div class="NavBar">
+  <div class="container">
+    <nav class="navbar nav-color has-shadow">
+      <div class="level">
+        <div class="level-left">
+          <p class="level-item">
+            <router-link to="/" class="button is-info">Home!</router-link>
+          </p>
+          <div class="level-item">
+            <div class="field has-addons">
+            <p class="control">
+              <input class="input" type="text" placeholder="Summoner Name">
+            </p>
+            <p class="control">
+              <button class="button is-info">
+                Get Stats!
+              </button>
+            </p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </nav>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'NavBar',
+  name: 'Navbar',
   data() {
     return {
 
@@ -16,5 +37,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
+  .container {
+    margin-top: 20px;
+  }
 </style>
