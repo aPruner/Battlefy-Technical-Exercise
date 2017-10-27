@@ -1,6 +1,8 @@
 <template>
   <div class="Summoner">
-    {{ summonerName }}
+    <div class="box">
+      {{ summonerName }}
+    </div>
   </div>
 </template>
 
@@ -11,6 +13,15 @@ export default {
   data() {
     return {
     };
+  },
+  methods: {
+    getSummoner: function(summonerName) {
+      APICaller.getSummonerByName(summonerName).then((summoner) => {
+        debugger;
+        console.log(summoner.name)
+        this.summoners.push(summoner.name);
+      });
+    },
   },
 };
 </script>

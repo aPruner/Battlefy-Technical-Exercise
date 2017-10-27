@@ -3,7 +3,6 @@ import axios from 'axios'
 
 export default {
   getSummonerByName: function(summonerName) {
-    debugger;
     // TODO: Validate the summoner name here
     const apiBaseURL = 'http://localhost:3001/api/';
     const fullRequestURL = apiBaseURL + summonerName + '?' + 'api_key=' + apiKey;

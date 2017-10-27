@@ -2,6 +2,7 @@
   <div class="Home">
     {{ msg }}
     <br>
+
     <button class="is-primary" v-on:click="getSummoner('Anticipate x')">
       Call the Riot API by clicking here!
     </button>
@@ -13,6 +14,11 @@
       Data: {{ summoners }}
     </p>
 
+    <!--
+    <input class="input" type="text" placeholder="Input your summoner name!">
+    <button class="">
+    </button>
+    -->
   </div>
 </template>
 
@@ -29,7 +35,6 @@ export default {
   methods: {
     getSummoner: function(summonerName) {
       APICaller.getSummonerByName(summonerName).then((summoner) => {
-        debugger;
         console.log(summoner.name)
         this.summoners.push(summoner.name);
       });
