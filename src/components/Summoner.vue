@@ -7,21 +7,15 @@
 </template>
 
 <script>
-// import APICaller from '../APICaller';
+import APICaller from '../APICaller';
 export default {
   name: 'Summoner',
   data() {
     return {
+      summonerName: '',
     };
   },
   methods: {
-    getSummoner: function(summonerName) {
-      APICaller.getSummonerByName(summonerName).then((summoner) => {
-        debugger;
-        console.log(summoner.name)
-        this.summoners.push(summoner.name);
-      });
-    },
   },
 };
 </script>

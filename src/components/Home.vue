@@ -14,17 +14,10 @@
     name: 'Home',
     data() {
       return {
-        summoners: [],
         msg: 'Welcome to the homepage of Adam\'s LoL stats app, created for battlefy! Use the above navigation bar to enter your summoner name and retrieve your LoL stats!',
       };
     },
     methods: {
-  //    getSummoner: function(summonerName) {
-  //      APICaller.getSummonerByName(summonerName).then((summoner) => {
-  //        console.log(summoner.name)
-  //        this.summoners.push(summoner.name);
-  //      });
-  //    },
     },
   };
 </script>
