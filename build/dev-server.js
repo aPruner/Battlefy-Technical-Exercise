@@ -23,7 +23,7 @@ const proxyTable = config.dev.proxyTable
 
 const app = express()
 const compiler = webpack(webpackConfig)
-
+const cors = require('cors');
 const devMiddleware = require('webpack-dev-middleware')(compiler, {
   publicPath: webpackConfig.output.publicPath,
   quiet: true
@@ -96,6 +96,25 @@ devMiddleware.waitUntilValid(() => {
     _resolve()
   })
 })
+
+const apiApp = express();
+
+apiApp.use(cors());
+apiApp.get('/api/:summonerName', (req, res) => {
+  const data = {
+    "profileIconId": 509,
+    "name": "SH0CK",
+    "summonerLevel": 30,
+    "accountId": 41215217,
+    "id": 26522373,
+    "revisionDate": 1508991321000
+  };
+  return res.send(data);
+});
+
+apiApp.listen(3001);
+
+
 
 module.exports = {
   ready: readyPromise,

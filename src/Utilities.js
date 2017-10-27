@@ -1,0 +1,3 @@
+// var validateSummonerName = function(summonerName) {
+//
+// };
