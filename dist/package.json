@@ -1,0 +1,10 @@
+{
+  "name": "lolstatsapp",
+  "version": "1.0.0",
+  "description": "LoL stats app created for Battlefy's technical interview process",
+  "author": "Adam Pruner <adampruner99@gmail.com>",
+  "private": true,
+  "scripts": {
+    "postinstall": "npm install express"
+  }
+}
