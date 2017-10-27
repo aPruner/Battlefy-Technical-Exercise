@@ -8,10 +8,8 @@ var port = process.env.PORT || 5000;
 app.listen(port);
 console.log('server started '+ port);
 
-var cors = require('cors');
 const apiApp = express();
 
-apiApp.use(cors());
 apiApp.get('/api/:summonerName', (req, res) => {
   const data = {
     "profileIconId": 509,
