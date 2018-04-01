@@ -1,6 +1,6 @@
 # League of Legends Statistics Application
 
-> League of Legends (abbrievated to LoL) statistics app created for Battlefy's technical interview process.  This application will track player statistics across different champions.  The application works by fetching information from Riot Games Servers when it is run.
+> A LoL (League of Legends) statistics app created for Battlefy's technical interview process. This application tracks player statistics across different champions by fetching information from the Riot Games Servers.
 
 ## Build Setup
 
